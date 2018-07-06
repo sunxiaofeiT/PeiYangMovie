@@ -1,2 +1,0 @@
-/** layui-v2.3.0-rc1 MIT License By https://www.layui.com */
- ;$.extend($.fn.treegrid.defaults,{expanderTemplate:'<i class="treegrid-expander"></i>',expanderExpandedClass:"icon-chevron-down",expanderCollapsedClass:"icon-chevron-right"});

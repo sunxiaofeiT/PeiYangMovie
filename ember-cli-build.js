@@ -7,6 +7,8 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('node_modules/layui-src/build/layui.js');
+  app.import('node_modules/layui-src/build/css/layui.css');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
