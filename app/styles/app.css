@@ -1,0 +1,15 @@
+/* nav css */
+.active {
+    color: #ffffff !important;   
+}
+body .layui-nav .layui-nav-item .active:after {
+    position: absolute;
+    left: 0;
+    height: 5px;
+    background-color: #5FB878;
+    transition: all .2s;
+    content: '';
+    top: auto;
+    bottom: 0;
+    width: 100%;
+}
