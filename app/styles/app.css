@@ -1,3 +1,9 @@
+/* 全局样式 */
+.body-container {
+    padding: 40px;
+}
+
+
 /* nav css */
 .active {
     color: #ffffff !important;   

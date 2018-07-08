@@ -30,7 +30,10 @@ Router.map(function() {
     this.route('stabilizer');
     this.route('live');
   });
-  this.route('people');
+  this.route('people', function() {
+    this.route('manager');
+    this.route('member');
+  });
   this.route('personal');
   this.route('login');
   this.route('register');

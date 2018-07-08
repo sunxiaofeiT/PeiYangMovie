@@ -1,16 +1,19 @@
 <h2>device page</h2>
 
 <div class="layui-container">
-
-<div>
-    {{#link-to "device.camera" class="layui-btn"}}摄像机{{/link-to}}
-    {{#link-to "device.slr" class="layui-btn"}}单反{{/link-to}}
-    {{#link-to "device.light" class="layui-btn"}}灯组{{/link-to}}
-    {{#link-to "device.battery" class="layui-btn"}}电池{{/link-to}}
-    {{#link-to "device.live" class="layui-btn"}}直播设备{{/link-to}}
-    {{#link-to "device.stabilizer" class="layui-btn"}}稳定器{{/link-to}}
-    {{#link-to "device.stand" class="layui-btn"}}架子{{/link-to}}
-</div>
+    <div class="layui-row">
+        <div class="layui-col-md8 layui-col-md-offset2">
+            <div>
+                {{#link-to "device.camera" class="layui-btn"}}摄像机{{/link-to}}
+                {{#link-to "device.slr" class="layui-btn"}}单反{{/link-to}}
+                {{#link-to "device.light" class="layui-btn"}}灯组{{/link-to}}
+                {{#link-to "device.battery" class="layui-btn"}}电池{{/link-to}}
+                {{#link-to "device.live" class="layui-btn"}}直播设备{{/link-to}}
+                {{#link-to "device.stabilizer" class="layui-btn"}}稳定器{{/link-to}}
+                {{#link-to "device.stand" class="layui-btn"}}架子{{/link-to}}
+            </div>
+        </div>
+    </div>
 </div>
 
 {{outlet}}
