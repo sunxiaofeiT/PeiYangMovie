@@ -1,8 +1,12 @@
-<h2>notice page</h2>     
-
-<div id="noticeLink">
-    {{#link-to "notice.all" class="layui-btn"}}所有{{/link-to}}
-    {{#link-to "notice.my" class="layui-btn"}}我的{{/link-to}}
+<div id="noticeLink" class="secondRouteLink">
+    <div class="link-div">
+        {{#link-to "notice.all" class="layui-btn layui-btn-sm"}}所有{{/link-to}}
+    </div>
+    <div class="link-div">
+        {{#link-to "notice.my" class="layui-btn layui-btn-sm"}}我的{{/link-to}}
+    </div>
 </div>
 
-{{outlet}}
+<div class="layui-container-field">
+    {{outlet}}
+</div>

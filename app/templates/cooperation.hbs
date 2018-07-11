@@ -1,8 +1,18 @@
-<h2>cooperation page</h2>
-
-<div>
-    {{#link-to "cooperation.news" class="layui-btn"}}消息{{/link-to}}
-    {{#link-to "cooperation.activity" class="layui-btn"}}活动{{/link-to}}
-    {{#link-to "cooperation.askdevice" class="layui-btn"}}申请设备{{/link-to}}
+<div class="secondRouteLink">
+    <div class="link-div">
+        {{#link-to "cooperation.index" class="layui-btn layui-btn-sm"}}所有{{/link-to}}
+    </div>
+    <div class="link-div">
+        {{#link-to "cooperation.news" class="layui-btn layui-btn-sm"}}消息{{/link-to}}
+    </div>
+    <div class="link-div">
+        {{#link-to "cooperation.activity" class="layui-btn layui-btn-sm"}}活动{{/link-to}}
+    </div>
+    <div class="link-div">
+        {{#link-to "cooperation.askdevice" class="layui-btn layui-btn-sm"}}申请设备{{/link-to}}
+    </div>
 </div>
-{{outlet}}
+
+<div class="layui-container-field">
+    {{outlet}}
+</div>

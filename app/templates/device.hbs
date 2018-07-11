@@ -1,19 +1,32 @@
-<h2>device page</h2>
-
-<div class="layui-container">
-    <div class="layui-row">
-        <div class="layui-col-md8 layui-col-md-offset2">
-            <div>
-                {{#link-to "device.camera" class="layui-btn"}}摄像机{{/link-to}}
-                {{#link-to "device.slr" class="layui-btn"}}单反{{/link-to}}
-                {{#link-to "device.light" class="layui-btn"}}灯组{{/link-to}}
-                {{#link-to "device.battery" class="layui-btn"}}电池{{/link-to}}
-                {{#link-to "device.live" class="layui-btn"}}直播设备{{/link-to}}
-                {{#link-to "device.stabilizer" class="layui-btn"}}稳定器{{/link-to}}
-                {{#link-to "device.stand" class="layui-btn"}}架子{{/link-to}}
-            </div>
+<div class="">
+    <div class="secondRouteLink">
+        <div class="link-div">
+            {{#link-to "device.index" class="layui-btn layui-btn-sm"}}所有设备{{/link-to}}
+        </div>
+        <div class="link-div">
+            {{#link-to "device.camera" class="layui-btn layui-btn-sm"}}摄像机{{/link-to}}
+        </div>
+        <div class="link-div">
+            {{#link-to "device.slr" class="layui-btn layui-btn-sm"}}单反{{/link-to}}
+        </div>
+        <div class="link-div">
+            {{#link-to "device.light" class="layui-btn layui-btn-sm"}}灯组{{/link-to}}
+        </div>
+        <div class="link-div">
+            {{#link-to "device.battery" class="layui-btn layui-btn-sm"}}电池{{/link-to}}
+        </div>
+        <div class="link-div">
+            {{#link-to "device.live" class="layui-btn layui-btn-sm"}}直播设备{{/link-to}}
+        </div>
+        <div class="link-div">
+            {{#link-to "device.stabilizer" class="layui-btn layui-btn-sm"}}稳定器{{/link-to}}
+        </div>
+        <div class="link-div">
+            {{#link-to "device.stand" class="layui-btn layui-btn-sm"}}架子{{/link-to}}
         </div>
     </div>
 </div>
 
-{{outlet}}
+<div class="layui-container-field">
+    {{outlet}}
+</div>

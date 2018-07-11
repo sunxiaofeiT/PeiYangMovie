@@ -12,7 +12,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('home');
   this.route('notice', function() {
-    this.route('index',{path:'/'});
+    this.route('index');
     this.route('all');
     this.route('my');
   });

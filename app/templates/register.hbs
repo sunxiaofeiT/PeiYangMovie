@@ -1,25 +1,31 @@
 <div class="layui-container-field">
-    <form class="layui-form">
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">用户名</label>
-                <input class="layui-input layui-input-inline" placeholder="请填写用户名">
+    <div class="layui-container form-div">
+        <div class="layui-row">
+            <div class="layui-col-md6 layui-col-md-offset3">
+                <form class="layui-form">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">用户名</label>
+                            <input class="layui-input layui-input-inline" placeholder="请填写用户名">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">邮箱</label>
+                            <div class="layui-input-block">
+                                <input class="layui-input layui-input-inline" placeholder="请填写你的邮箱">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <button class="layui-btn layui-btn-sm">注册</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">邮箱</label>
-                <div class="layui-input-block">
-                    <input class="layui-input layui-input-inline" placeholder="请填写你的邮箱">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <button class="layui-btn layui-btn-sm">注册</button>
-            </div>
-        </div>
-    </form>
+    </div>
 </div>
 
 {{outlet}}

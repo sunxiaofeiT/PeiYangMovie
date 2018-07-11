@@ -1,8 +1,15 @@
-<p>人员</p>
-
-<div class="">
-    {{#link-to "people.manager" class=""}}管理{{/link-to}}
-    {{#link-to "people.member" class=""}}社员{{/link-to}}
+<div class="secondRouteLink">
+    <div class="link-div">
+        {{#link-to "people.index" class="layui-btn layui-btn-sm"}}所有人员{{/link-to}}
+    </div>
+    <div class="link-div">
+        {{#link-to "people.manager" class="layui-btn layui-btn-sm"}}管理人员{{/link-to}}
+    </div>
+    <div class="link-div">
+        {{#link-to "people.member" class="layui-btn layui-btn-sm"}}社员{{/link-to}}
+    </div>
 </div>
 
-{{outlet}}
+<div class="layui-container-field">
+    {{outlet}}
+</div>
