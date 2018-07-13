@@ -1,10 +1,47 @@
 <div class="layui-container">
     <div class="layui-row">
         <div class="layui-col-md4 layui-col-md-offset4">
-            <div style="text-align:center">
-                <h1>北洋电影工作室-PeiYangMovie</h1>
-                <p>天津大学北洋艺术团</p>
-                <button class="layui-btn">详 情</button>
+            <div id="home-page-content">
+                <div class="home-page-item">
+                    <div class="home-page-item-title">
+                        <p>北洋电影工作室 &nbsp; - &nbsp; PeiYangMovie</p>
+                    </div>
+                    <div class="home-page-item-describe">
+                        <p>隶属于天津大学北洋艺术团</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="home-page-item">
+                    <div class="home-page-item-content">
+                        <p> 北洋电影工作室，原名北洋电影社，社团原身最早创建于1925年，是天津大学最早的一批社团之一。 为更好的体现社团的核心理念，于2018年5月份正式更名为北洋电影工作室。</p>
+                        <p> 在漫长的发展过程中，北洋电影的规模日益壮大，现已成为可以完成拍摄、剪辑、制作、包装等一系列活动的工作室。同时，北洋电影工作室欢迎对影视技术感兴趣的同学加入到我们中来！</p>
+                    </div>
+                </div>
+
+                <div class="home-page-item">
+                    <div class="home-page-item-title">
+                        {{#link-to "notice" class="home-page-item-a"}}公告{{/link-to}}
+                    </div>
+                    <div class="home-page-item-content">
+                        <p>公告，由管理员发布，发布时可选择要提醒的对象，默认不提醒任何人，如果选择了通知对象，则会提醒选中的人，其他人不提醒。分为“所有”、“我的”。</p>
+                        <p>所有，会显示所有公告，包括通知对象为所有人的和自己的。</p>
+                        <p>我的，只会显示通知对象中有自己的公告。</p>
+                    </div>
+                </div>
+
+                <div class="home-page-item">
+                    <div class="home-page-item-title">
+                        {{#link-to "cooperation" class="home-page-item-a"}}协作{{/link-to}}
+                    </div>
+                    <div class="home-page-item-content">
+                        <ul>
+                            <li>所有，显示所有动态，包括活动、与自己相关消息、申请设备</li>
+                            <li>活动，显示当前所有的活动。</li>
+                            <li>消息，显示所有与自己相关的消息。</li>
+                            <li>申请设备，显示自己申请设备记录，同时可以发出新的设备申请请求。</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

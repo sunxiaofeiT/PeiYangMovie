@@ -1,71 +1,188 @@
 /* 全局样式 */
+html body {
+    font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+}
 
 /* 二级导航样式 */
+
 .secondRouteLink .link-div {
-    display: inline-block;
+  display: inline-block;
 }
+
 .secondRouteLink .link-div .layui-btn-sm {
-    height: 24px;
-    line-height: 24px;
-    border: 1px solid #188FFF;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #188FFF;
 }
+
 .secondRouteLink .link-div::after {
-    content: " / ";
-    background-image: url("right.jpg");
+  content: " / ";
+  background-image: url("right.jpg");
 }
+
 /* 二级导航栏激活样式 */
+
 .link-div .active {
-    color: #333;
-    background-color: #ffffff;
-    border: 1px solid #188fff;
+  color: #333;
+  background-color: #ffffff;
+  border: 1px solid #188fff;
 }
+
 .link-div .active:focus {
-    color: black;
+  color: black;
 }
 
 /* 二级导航下内容的样式  */
+
 .layui-container-field {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 /* nav css */
+
 .layui-nav-item .active {
-    color: #ffffff !important;   
+  color: #ffffff !important;
 }
+
 body .layui-nav .layui-nav-item .active:after {
-    position: absolute;
-    left: 0;
-    height: 5px;
-    background-color: #188FFF;
-    transition: all .2s;
-    content: '';
-    top: auto;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  left: 0;
+  height: 5px;
+  background-color: #188FFF;
+  transition: all .2s;
+  content: '';
+  top: auto;
+  bottom: 0;
+  width: 100%;
 }
 
 #logo-div {
-    width: 150px;
-    height: 60px;
+  width: 150px;
+  height: 60px;
 }
 
 /* 登陆、注册页面样式 */
+
 .form-div {
-    margin-top: 30px !important;
+  margin-top: 30px !important;
 }
 
 /* bottom-nav 样式 */
+
 #bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 24px;
-    line-height: 24px;
-    font-size: 10px;
-    font-weight: 400;
-    background: #393D49;
-    color: #ffffff;
-    text-align: right;
-    padding-right: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 10px;
+  font-weight: 400;
+  background: #393D49;
+  color: #ffffff;
+  text-align: right;
+  padding-right: 40px;
 }
+
+/* 搜索框样式  search-entry */
+
+#search-entry-right {
+  float: right;
+}
+
+#search-button {
+  margin-left: 10px;
+}
+
+/* 二级导航内容样式 */
+
+.second-route-content {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+/* home page 主页样式 */
+
+#home-page-content {
+  line-height: 40px;
+}
+
+.home-page-item-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.home-page-item-describe {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.home-page-item+.home-page-item {
+  margin-top: 40px;
+}
+
+/* passage 样式 */
+
+.passage-item-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100px;
+  border-bottom: 1px solid #eee;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.passage-item-title .passage-item-h1 {
+  display: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.passage-item-content {
+    height: 65px;
+}
+
+.passage-item-content .passage-item-p {
+  margin: 0 0 8px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #999;
+}
+
+.passage-item-img-div {
+  border: 1px solid black;
+  width: 125px;
+  height: 100px;
+  float: right;
+  margin-top: -115px;
+}
+
+.passage-item-info {
+    color: #999;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.passage-item-info .passage-item-info-time{
+    margin-left: 20px;
+}
+
+
+.passage-item-info-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: 16px 16px;
+}
+
+.passage-item-publisher-icon {
+    background-image: url("./author.png");
+}
+.passage-item-time-icon {
+    background-image: url("./time.png");
+}
+
