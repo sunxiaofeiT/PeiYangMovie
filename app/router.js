@@ -3,7 +3,7 @@ import config from './config/environment';
 
 const Router = EmberRouter.extend({
   location: config.locationType,
-  rootURL: config.rootURL,
+  rootURL: '/',
   beforeModel() {
     this.transitionTo('home');
   },
@@ -12,7 +12,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('home');
   this.route('notice', function() {
-    this.route('index');
+    this.route('index',{path:'/'});
     this.route('all');
     this.route('my');
   });

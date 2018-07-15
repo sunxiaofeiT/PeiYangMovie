@@ -1,3 +1,5 @@
-<p>管理人员</p>
+{{#each model as |managerInit|}}
+    {{people-info user=managerInit}}
+{{/each}}
 
 {{outlet}}

@@ -1,2 +1,5 @@
-<p>所有人员</p>
+{{#each model as |peopleInit|}}
+    {{people-info user=peopleInit}}
+{{/each}}
+
 {{outlet}}

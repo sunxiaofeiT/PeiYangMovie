@@ -1,3 +1,5 @@
-<p>社员</p>
+{{#each model as |memberInit|}}
+    {{people-info user=memberInit}}
+{{/each}}
 
 {{outlet}}

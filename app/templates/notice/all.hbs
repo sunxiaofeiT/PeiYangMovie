@@ -1,4 +1,4 @@
-{{passage-item}}
-{{passage-item}}
-
+{{#each model as |passageInit|}}
+    {{passage-item passage=passageInit}}
+{{/each}}
 {{outlet}}

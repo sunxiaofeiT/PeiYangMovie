@@ -1,2 +1,7 @@
-<p>所有设备</p>
+{{#each model as |deviceInit|}}
+    {{device-item device=deviceInit}}
+{{/each}}
+
+<div class="clear"></div>
+
 {{outlet}}

@@ -1,3 +1,7 @@
-<p>消息</p>
+{{#each model as |cooperationInit|}}
+    {{cooperation-item cooperation=cooperationInit}}
+{{/each}}
+
+<div class="clear"></div>
 
 {{outlet}}

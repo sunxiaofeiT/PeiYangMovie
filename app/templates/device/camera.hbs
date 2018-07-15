@@ -1,3 +1,7 @@
-<p>摄像机</p>
+{{#each model as |deviceInit|}}
+    {{device-item device=deviceInit}}
+{{/each}}
+
+<div class="clear"></div>
 
 {{outlet}}

@@ -1,21 +1,21 @@
 <div class="passage-item-container">
     <div class="passage-item-text">
         <div class="passage-item-title">
-            <h1 class="passage-item-h1">这是标题</h1>
+            <h1 class="passage-item-h1">{{passage.title}}</h1>
         </div>
         <div class="passage-item-content">
-            <p class="passage-item-p">there is the item's detial. tt df da daf dafdafdaf dfadf </p>
+            <p class="passage-item-p">{{passage.content}}</p>
         </div>
         <div class="passage-item-info">
             {{!-- <i class="passage-item-publisher-icon passage-item-info-icon"></i> --}}
-            <p class="passage-item-info-publisher layui-inline">管理员</p>
+            <p class="passage-item-info-publisher layui-inline">{{passage.author}}</p>
             {{!-- <div class="passage-item-time-icon passage-item-info-icon"></div> --}}
-            <p class="passage-item-info-time layui-inline">2018-08-07 19:00</p>
+            <p class="passage-item-info-time layui-inline">{{passage.time}}</p>
         </div>
         <div class="layui-clear"></div>
     </div>
     <div class="passage-item-img-div">
-        <img class="passage-item-img" url="{{rootURL}}assets/zhibologo.bmp">
+        <img class="passage-item-img" src={{passage.image}}>
     </div>
 </div>
 {{yield}}

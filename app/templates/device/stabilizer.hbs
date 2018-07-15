@@ -1,3 +1,7 @@
-<p>稳定器</p>
+{{#each model as |deviceInit|}}
+    {{device-item device=deviceInit}}
+{{/each}}
+
+<div class="clear"></div>
 
 {{outlet}}

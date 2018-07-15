@@ -1,0 +1,71 @@
+<style>
+    .people-info {
+        height: 120px;
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .people-img-div {
+        width: 108px;
+        height: 108px;
+        float: left;
+    }
+    .people-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .people-text {
+        width: 65%;
+        float: left;
+        margin-top: 4px;
+        margin-left: 40px;
+        height: 100px;
+    }
+    .people-name {
+        float: left;
+        color: #333;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .people-admin, .people-collage {
+        margin-left: 40px;
+    }
+    .people-collage, .people-major {
+        line-height: 32px;
+    }
+    .people-grade {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+    .people-desc {
+        overflow: hidden;
+    }
+</style>
+
+<div class="people-info">
+    <div class="people-img-div">
+        <img class="people-img" src={{user.image}}>
+    </div>
+    <div class="people-text">
+        <div class="people-school-info">
+            <span class="people-name">{{user.name}}</span>
+            <span class="people-admin">
+                {{#if user.admin}}
+                    管理员
+                {{else}}
+                    社员
+                {{/if}}
+            </span>
+            <span class="people-collage">{{user.collage}}</span>
+            <span class="people-major">{{user.major}}</span>
+            <span class="people-grade">{{user.grade}}</span>
+        </div>
+        <div class="people-desc"><p>{{user.desc}}</p></div>
+        <div class="people-level">{{people.level}}</div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+{{yield}}

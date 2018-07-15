@@ -1,2 +1,5 @@
-{{!-- 重定向到 notice.all 路由 --}}
+{{#each model as |passageInit|}}
+    {{passage-item passage=passageInit}}
+{{/each}}
+
 {{outlet}}
